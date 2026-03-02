@@ -1,0 +1,77 @@
+﻿<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>PeerStack | Project</title>
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+  <body data-page="dashboard">
+    <nav class="navbar" data-navbar>
+      <div class="container nav-inner">
+        <a class="brand" href="index.html">PeerStack</a>
+        <form class="search-bar nav-search" action="#" role="search">
+          <span class="search-icon" aria-hidden="true">&#128269;</span>
+          <input class="search-input" type="search" aria-label="Search PeerStack" placeholder="Search skills, people, projects" />
+        </form>
+        <button class="hamburger" type="button" data-nav-toggle aria-label="Toggle navigation" aria-expanded="false">
+          <span></span><span></span><span></span>
+        </button>
+        <div class="nav-links" data-nav-links>
+          <a class="nav-link" data-nav="dashboard" href="dashboard.html">Dashboard</a>
+          <a class="nav-link" data-nav="discover" href="search.html">Discover</a>
+          <a class="nav-link" data-nav="profile" href="profile.html">Profile</a>
+          <a class="nav-link" data-nav="notifications" href="notifications.html">Notifications</a>
+          <a class="nav-link" href="login.html">Logout</a>
+        </div>
+      </div>
+    </nav>
+
+    <main class="page-main">
+      <div class="container stack">
+        <section class="card page-header">
+          <h1 class="page-title">SPEN Programming Language</h1>
+          <p class="muted">Creator: Sreeraj Patnaik</p>
+          <p class="muted">An experimental programming language project focused on clean syntax, bytecode execution, and learning compiler principles.</p>
+          <div class="skill-tags">
+            <span class="skill-tag">Python</span>
+            <span class="skill-tag">Interpreter</span>
+            <span class="skill-tag">Compilers</span>
+            <span class="skill-tag">CLI Tools</span>
+          </div>
+        </section>
+
+        <section class="project-layout">
+          <article class="card project-card">
+            <h2 class="section-title">Team Members</h2>
+            <ul class="list">
+              <li>Sreeraj Patnaik - Project Lead</li>
+              <li>Rahul Verma - Backend Developer</li>
+              <li>Neha Patel - Data and Testing</li>
+            </ul>
+          </article>
+          <aside class="card project-card">
+            <h2 class="section-title">Open Roles</h2>
+            <ul class="list">
+              <li>Looking for Frontend Developer</li>
+              <li>Technical Writer</li>
+            </ul>
+            <button class="btn btn-primary" type="button">Join Project</button>
+          </aside>
+        </section>
+      </div>
+    </main>
+
+    <footer class="footer">
+      <div class="container footer-inner">
+        <p class="muted">PeerStack <span data-year></span></p>
+        <div class="footer-links">
+          <a href="#">About</a>
+          <a href="#">Contact</a>
+          <a href="#">GitHub</a>
+        </div>
+      </div>
+    </footer>
+    <script src="js/main.js"></script>
+  </body>
+</html>

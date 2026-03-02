@@ -1,0 +1,92 @@
+﻿<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>PeerStack | Sign Up</title>
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+  <body data-page="auth">
+    <nav class="navbar" data-navbar>
+      <div class="container nav-inner">
+        <a class="brand" href="index.html">PeerStack</a>
+        <form class="search-bar nav-search" action="#" role="search">
+          <span class="search-icon" aria-hidden="true">&#128269;</span>
+          <input class="search-input" type="search" aria-label="Search PeerStack" placeholder="Search skills, people, projects" />
+        </form>
+        <button class="hamburger" type="button" data-nav-toggle aria-label="Toggle navigation" aria-expanded="false">
+          <span></span><span></span><span></span>
+        </button>
+        <div class="nav-links" data-nav-links>
+          <a class="nav-link" data-nav="dashboard" href="dashboard.html">Dashboard</a>
+          <a class="nav-link" data-nav="discover" href="search.html">Discover</a>
+          <a class="nav-link" data-nav="profile" href="profile.html">Profile</a>
+          <a class="nav-link" data-nav="notifications" href="notifications.html">Notifications</a>
+          <a class="nav-link" href="login.html">Login</a>
+        </div>
+      </div>
+    </nav>
+
+    <main class="container auth-layout">
+      <section class="card auth-card">
+        <h1 class="section-title">Create Account</h1>
+        <p class="muted">Join PeerStack and connect with skilled builders in your campus.</p>
+        <form class="form" action="#">
+          <div class="form-row">
+            <div class="form-group">
+              <label for="firstName">First Name</label>
+              <input class="input" id="firstName" type="text" placeholder="Sreeraj" required />
+            </div>
+            <div class="form-group">
+              <label for="lastName">Last Name</label>
+              <input class="input" id="lastName" type="text" placeholder="Patnaik" required />
+            </div>
+          </div>
+          <div class="form-group">
+            <label for="college">College</label>
+            <input class="input" id="college" type="text" placeholder="Your campus / university" required />
+          </div>
+          <div class="form-group">
+            <label for="signupEmail">Email</label>
+            <input class="input" id="signupEmail" type="email" placeholder="you@college.edu" required />
+          </div>
+          <div class="form-row">
+            <div class="form-group">
+              <label for="signupPassword">Password</label>
+              <input class="input" id="signupPassword" type="password" placeholder="Create password" required />
+            </div>
+            <div class="form-group">
+              <label for="confirmPassword">Confirm Password</label>
+              <input class="input" id="confirmPassword" type="password" placeholder="Repeat password" required />
+            </div>
+          </div>
+          <div class="form-group">
+            <label for="skills">Primary Skills</label>
+            <input class="input" id="skills" type="text" placeholder="Python, Django, UI/UX" />
+          </div>
+          <button class="btn btn-primary" type="submit">Create Account</button>
+        </form>
+      </section>
+
+      <aside class="card auth-card">
+        <h2 class="section-title">Why PeerStack</h2>
+        <div class="stack">
+          <article class="card feature-card">
+            <h3>Find Teammates Quickly</h3>
+            <p class="muted">Match with peers who already have the skills your project needs.</p>
+          </article>
+          <article class="card feature-card">
+            <h3>Grow Your Portfolio</h3>
+            <p class="muted">Build meaningful projects and make your profile visible across campus.</p>
+          </article>
+          <article class="card feature-card">
+            <h3>Stay in the Loop</h3>
+            <p class="muted">Get notifications when someone views your profile or invites you.</p>
+          </article>
+        </div>
+      </aside>
+    </main>
+
+    <script src="js/main.js"></script>
+  </body>
+</html>

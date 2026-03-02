@@ -1,0 +1,76 @@
+﻿<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>PeerStack | Notifications</title>
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+  <body data-page="notifications">
+    <nav class="navbar" data-navbar>
+      <div class="container nav-inner">
+        <a class="brand" href="index.html">PeerStack</a>
+        <form class="search-bar nav-search" action="#" role="search">
+          <span class="search-icon" aria-hidden="true">&#128269;</span>
+          <input class="search-input" type="search" aria-label="Search PeerStack" placeholder="Search skills, people, projects" />
+        </form>
+        <button class="hamburger" type="button" data-nav-toggle aria-label="Toggle navigation" aria-expanded="false">
+          <span></span><span></span><span></span>
+        </button>
+        <div class="nav-links" data-nav-links>
+          <a class="nav-link" data-nav="dashboard" href="dashboard.html">Dashboard</a>
+          <a class="nav-link" data-nav="discover" href="search.html">Discover</a>
+          <a class="nav-link" data-nav="profile" href="profile.html">Profile</a>
+          <a class="nav-link" data-nav="notifications" href="notifications.html">Notifications</a>
+          <a class="nav-link" href="login.html">Logout</a>
+        </div>
+      </div>
+    </nav>
+
+    <main class="page-main">
+      <div class="container stack">
+        <section class="card page-header">
+          <h1 class="page-title">Notifications</h1>
+          <p class="muted">Keep track of profile activity, invites, and collaboration updates.</p>
+        </section>
+
+        <section class="notification-list">
+          <article class="card notification-item unread">
+            <div>
+              <strong>Rahul viewed your profile</strong>
+              <p class="muted">Your profile is getting visibility among backend-focused peers.</p>
+            </div>
+            <time datetime="2026-03-02T09:30">2h ago</time>
+          </article>
+          <article class="card notification-item unread">
+            <div>
+              <strong>Neha invited you to join a project</strong>
+              <p class="muted">Project: Campus Placement Insights Dashboard.</p>
+            </div>
+            <time datetime="2026-03-02T08:00">3h ago</time>
+          </article>
+          <article class="card notification-item unread">
+            <div>
+              <strong>Arjun followed you</strong>
+              <p class="muted">You have a new connection in your campus network.</p>
+            </div>
+            <time datetime="2026-03-01T18:00">Yesterday</time>
+          </article>
+        </section>
+      </div>
+    </main>
+
+    <footer class="footer">
+      <div class="container footer-inner">
+        <p class="muted">PeerStack <span data-year></span></p>
+        <div class="footer-links">
+          <a href="#">About</a>
+          <a href="#">Contact</a>
+          <a href="#">GitHub</a>
+        </div>
+      </div>
+    </footer>
+
+    <script src="js/main.js"></script>
+  </body>
+</html>

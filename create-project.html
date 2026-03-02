@@ -1,0 +1,83 @@
+﻿<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>PeerStack | Create Project</title>
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+  <body data-page="dashboard">
+    <nav class="navbar" data-navbar>
+      <div class="container nav-inner">
+        <a class="brand" href="index.html">PeerStack</a>
+        <form class="search-bar nav-search" action="#" role="search">
+          <span class="search-icon" aria-hidden="true">&#128269;</span>
+          <input class="search-input" type="search" aria-label="Search PeerStack" placeholder="Search skills, people, projects" />
+        </form>
+        <button class="hamburger" type="button" data-nav-toggle aria-label="Toggle navigation" aria-expanded="false">
+          <span></span><span></span><span></span>
+        </button>
+        <div class="nav-links" data-nav-links>
+          <a class="nav-link" data-nav="dashboard" href="dashboard.html">Dashboard</a>
+          <a class="nav-link" data-nav="discover" href="search.html">Discover</a>
+          <a class="nav-link" data-nav="profile" href="profile.html">Profile</a>
+          <a class="nav-link" data-nav="notifications" href="notifications.html">Notifications</a>
+          <a class="nav-link" href="login.html">Logout</a>
+        </div>
+      </div>
+    </nav>
+
+    <main class="page-main">
+      <div class="container stack">
+        <section class="card page-header">
+          <h1 class="page-title">Create Project</h1>
+          <p class="muted">Publish a new project and attract collaborators from your campus.</p>
+        </section>
+
+        <section class="card project-card">
+          <form class="form" action="#">
+            <div class="form-group">
+              <label for="projectName">Project Name</label>
+              <input class="input" id="projectName" type="text" placeholder="e.g. Campus Placement Tracker" required />
+            </div>
+            <div class="form-group">
+              <label for="description">Description</label>
+              <textarea class="textarea" id="description" placeholder="Describe your project and goals" required></textarea>
+            </div>
+            <div class="form-row">
+              <div class="form-group">
+                <label for="techStack">Tech Stack</label>
+                <input class="input" id="techStack" type="text" placeholder="Python, Django, PostgreSQL" />
+              </div>
+              <div class="form-group">
+                <label for="teamSize">Team Size</label>
+                <select class="select" id="teamSize">
+                  <option>2-3</option>
+                  <option>4-5</option>
+                  <option>6-8</option>
+                </select>
+              </div>
+            </div>
+            <div class="form-group">
+              <label for="roles">Roles Needed</label>
+              <input class="input" id="roles" type="text" placeholder="Frontend Developer, Designer, QA" />
+            </div>
+            <button class="btn btn-primary" type="submit">Create Project</button>
+          </form>
+        </section>
+      </div>
+    </main>
+
+    <footer class="footer">
+      <div class="container footer-inner">
+        <p class="muted">PeerStack <span data-year></span></p>
+        <div class="footer-links">
+          <a href="#">About</a>
+          <a href="#">Contact</a>
+          <a href="#">GitHub</a>
+        </div>
+      </div>
+    </footer>
+    <script src="js/main.js"></script>
+  </body>
+</html>

@@ -1,0 +1,100 @@
+﻿<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>PeerStack | Skill Search</title>
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+  <body data-page="discover">
+    <nav class="navbar" data-navbar>
+      <div class="container nav-inner">
+        <a class="brand" href="index.html">PeerStack</a>
+        <form class="search-bar nav-search" action="#" role="search">
+          <span class="search-icon" aria-hidden="true">&#128269;</span>
+          <input class="search-input" type="search" aria-label="Search PeerStack" placeholder="Search skills, people, projects" />
+        </form>
+        <button class="hamburger" type="button" data-nav-toggle aria-label="Toggle navigation" aria-expanded="false">
+          <span></span><span></span><span></span>
+        </button>
+        <div class="nav-links" data-nav-links>
+          <a class="nav-link" data-nav="dashboard" href="dashboard.html">Dashboard</a>
+          <a class="nav-link" data-nav="discover" href="search.html">Discover</a>
+          <a class="nav-link" data-nav="profile" href="profile.html">Profile</a>
+          <a class="nav-link" data-nav="notifications" href="notifications.html">Notifications</a>
+          <a class="nav-link" href="login.html">Logout</a>
+        </div>
+      </div>
+    </nav>
+
+    <main class="page-main">
+      <div class="container stack">
+        <section class="card page-header">
+          <h1 class="page-title">Skill Search</h1>
+          <p class="muted">Search by skill and discover peers who can collaborate on your next build.</p>
+          <form class="search-bar">
+            <span class="search-icon" aria-hidden="true">&#128269;</span>
+            <input id="skillSearch" class="search-input" type="search" placeholder="Search skill (e.g. Python)" value="Python" />
+          </form>
+        </section>
+
+        <section class="stack">
+          <div class="results-header">
+            <h2 class="section-title">Python Developers (12)</h2>
+            <a class="btn btn-secondary" href="create-project.html">Create Project</a>
+          </div>
+          <div class="grid-3">
+            <article class="card developer-card" data-skill-card data-search="rahul backend python django">
+              <div class="avatar">RV</div>
+              <h3>Rahul - Backend</h3>
+              <p class="muted">Django APIs, PostgreSQL, deployment pipelines.</p>
+              <a class="btn btn-primary" href="profile.html">View Profile</a>
+            </article>
+            <article class="card developer-card" data-skill-card data-search="sreeraj django python compiler">
+              <div class="avatar">SP</div>
+              <h3>Sreeraj - Django</h3>
+              <p class="muted">Backend architecture, auth systems, developer tooling.</p>
+              <a class="btn btn-primary" href="profile.html">View Profile</a>
+            </article>
+            <article class="card developer-card" data-skill-card data-search="neha data science python ml">
+              <div class="avatar">NP</div>
+              <h3>Neha - Data Science</h3>
+              <p class="muted">Data pipelines, model training, experimentation dashboards.</p>
+              <a class="btn btn-primary" href="profile.html">View Profile</a>
+            </article>
+            <article class="card developer-card" data-skill-card data-search="arjun frontend javascript ui ux">
+              <div class="avatar">AM</div>
+              <h3>Arjun - Frontend</h3>
+              <p class="muted">Responsive UI systems with strong product polish.</p>
+              <a class="btn btn-primary" href="profile.html">View Profile</a>
+            </article>
+            <article class="card developer-card" data-skill-card data-search="vani devops docker cloud ci cd">
+              <div class="avatar">VK</div>
+              <h3>Vani - DevOps</h3>
+              <p class="muted">CI/CD, containerization, cloud environment setup.</p>
+              <a class="btn btn-primary" href="profile.html">View Profile</a>
+            </article>
+            <article class="card developer-card" data-skill-card data-search="kavin product fullstack javascript python">
+              <div class="avatar">KR</div>
+              <h3>Kavin - Full Stack</h3>
+              <p class="muted">Rapid prototyping for product and engineering teams.</p>
+              <a class="btn btn-primary" href="profile.html">View Profile</a>
+            </article>
+          </div>
+        </section>
+      </div>
+    </main>
+
+    <footer class="footer">
+      <div class="container footer-inner">
+        <p class="muted">PeerStack <span data-year></span></p>
+        <div class="footer-links">
+          <a href="#">About</a>
+          <a href="#">Contact</a>
+          <a href="#">GitHub</a>
+        </div>
+      </div>
+    </footer>
+    <script src="js/main.js"></script>
+  </body>
+</html>

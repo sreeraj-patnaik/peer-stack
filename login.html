@@ -1,0 +1,66 @@
+﻿<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>PeerStack | Login</title>
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+  <body data-page="auth">
+    <nav class="navbar" data-navbar>
+      <div class="container nav-inner">
+        <a class="brand" href="index.html">PeerStack</a>
+        <form class="search-bar nav-search" action="#" role="search">
+          <span class="search-icon" aria-hidden="true">&#128269;</span>
+          <input class="search-input" type="search" aria-label="Search PeerStack" placeholder="Search skills, people, projects" />
+        </form>
+        <button class="hamburger" type="button" data-nav-toggle aria-label="Toggle navigation" aria-expanded="false">
+          <span></span><span></span><span></span>
+        </button>
+        <div class="nav-links" data-nav-links>
+          <a class="nav-link" data-nav="dashboard" href="dashboard.html">Dashboard</a>
+          <a class="nav-link" data-nav="discover" href="search.html">Discover</a>
+          <a class="nav-link" data-nav="profile" href="profile.html">Profile</a>
+          <a class="nav-link" data-nav="notifications" href="notifications.html">Notifications</a>
+          <a class="nav-link" href="signup.html">Sign Up</a>
+        </div>
+      </div>
+    </nav>
+
+    <main class="container auth-layout">
+      <section class="card auth-card">
+        <h1 class="section-title">Welcome Back</h1>
+        <p class="muted">Log in to continue collaborating with developers in your campus.</p>
+        <form class="form" action="#">
+          <div class="form-group">
+            <label for="loginEmail">Email</label>
+            <input class="input" id="loginEmail" type="email" placeholder="you@college.edu" required />
+          </div>
+          <div class="form-group">
+            <label for="loginPassword">Password</label>
+            <input class="input" id="loginPassword" type="password" placeholder="Enter password" required />
+          </div>
+          <button class="btn btn-primary" type="submit">Login</button>
+        </form>
+      </section>
+
+      <aside class="card auth-card">
+        <h2 class="section-title">Build Faster With Peers</h2>
+        <p class="muted">From hackathons to course projects, PeerStack helps you find teammates with matching strengths.</p>
+        <div class="feature-grid">
+          <article class="card feature-card">
+            <h3>Verified Skills</h3>
+            <p class="muted">Identify peers with practical project experience.</p>
+          </article>
+          <article class="card feature-card">
+            <h3>Project Discovery</h3>
+            <p class="muted">See open roles and join active campus teams.</p>
+          </article>
+        </div>
+        <p class="muted">New here? <a href="signup.html"><strong>Create an account</strong></a></p>
+      </aside>
+    </main>
+
+    <script src="js/main.js"></script>
+  </body>
+</html>

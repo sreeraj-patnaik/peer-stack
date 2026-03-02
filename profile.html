@@ -1,0 +1,91 @@
+﻿<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>PeerStack | Profile</title>
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+  <body data-page="profile">
+    <nav class="navbar" data-navbar>
+      <div class="container nav-inner">
+        <a class="brand" href="index.html">PeerStack</a>
+        <form class="search-bar nav-search" action="#" role="search">
+          <span class="search-icon" aria-hidden="true">&#128269;</span>
+          <input class="search-input" type="search" aria-label="Search PeerStack" placeholder="Search skills, people, projects" />
+        </form>
+        <button class="hamburger" type="button" data-nav-toggle aria-label="Toggle navigation" aria-expanded="false">
+          <span></span><span></span><span></span>
+        </button>
+        <div class="nav-links" data-nav-links>
+          <a class="nav-link" data-nav="dashboard" href="dashboard.html">Dashboard</a>
+          <a class="nav-link" data-nav="discover" href="search.html">Discover</a>
+          <a class="nav-link" data-nav="profile" href="profile.html">Profile</a>
+          <a class="nav-link" data-nav="notifications" href="notifications.html">Notifications</a>
+          <a class="nav-link" href="login.html">Logout</a>
+        </div>
+      </div>
+    </nav>
+
+    <main class="page-main">
+      <div class="container stack">
+        <section class="card profile-header">
+          <div class="avatar avatar-lg">SP</div>
+          <div>
+            <h1 class="profile-name">Sreeraj Patnaik</h1>
+            <p class="muted">SRM University</p>
+            <p class="muted">Backend-focused student developer exploring compilers, systems, and full-stack engineering.</p>
+          </div>
+          <button class="btn btn-primary" type="button">Edit Profile</button>
+        </section>
+
+        <section class="card project-card">
+          <h2 class="section-title">Skills</h2>
+          <div class="skill-tags">
+            <span class="skill-tag">Python</span>
+            <span class="skill-tag">Django</span>
+            <span class="skill-tag">HTML</span>
+            <span class="skill-tag">CSS</span>
+            <span class="skill-tag">C</span>
+          </div>
+        </section>
+
+        <section class="card project-card">
+          <h2 class="section-title">Projects</h2>
+          <div class="grid-2">
+            <article class="card feature-card">
+              <h3>SPEN Programming Language</h3>
+              <p class="muted">Experimental interpreter with focus on easy syntax and educational runtime internals.</p>
+            </article>
+            <article class="card feature-card">
+              <h3>Campus Forum API</h3>
+              <p class="muted">A lightweight Django API for student communities to discuss events and initiatives.</p>
+            </article>
+          </div>
+        </section>
+
+        <section class="card project-card">
+          <h2 class="section-title">Contact</h2>
+          <div class="contact-links">
+            <a href="#">GitHub</a>
+            <a href="#">LinkedIn</a>
+            <a href="mailto:sreeraj@example.com">Email</a>
+          </div>
+        </section>
+      </div>
+    </main>
+
+    <footer class="footer">
+      <div class="container footer-inner">
+        <p class="muted">PeerStack <span data-year></span></p>
+        <div class="footer-links">
+          <a href="#">About</a>
+          <a href="#">Contact</a>
+          <a href="#">GitHub</a>
+        </div>
+      </div>
+    </footer>
+
+    <script src="js/main.js"></script>
+  </body>
+</html>

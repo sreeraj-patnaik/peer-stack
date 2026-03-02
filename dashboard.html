@@ -1,0 +1,138 @@
+﻿<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>PeerStack | Dashboard</title>
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+  <body data-page="dashboard">
+    <nav class="navbar" data-navbar>
+      <div class="container nav-inner">
+        <a class="brand" href="index.html">PeerStack</a>
+        <form class="search-bar nav-search" action="#" role="search">
+          <span class="search-icon" aria-hidden="true">&#128269;</span>
+          <input class="search-input" type="search" aria-label="Search PeerStack" placeholder="Search skills, people, projects" />
+        </form>
+        <button class="hamburger" type="button" data-nav-toggle aria-label="Toggle navigation" aria-expanded="false">
+          <span></span><span></span><span></span>
+        </button>
+        <div class="nav-links" data-nav-links>
+          <a class="nav-link" data-nav="dashboard" href="dashboard.html">Dashboard</a>
+          <a class="nav-link" data-nav="discover" href="search.html">Discover</a>
+          <a class="nav-link" data-nav="profile" href="profile.html">Profile</a>
+          <a class="nav-link" data-nav="notifications" href="notifications.html">Notifications</a>
+          <a class="nav-link" href="login.html">Logout</a>
+        </div>
+      </div>
+    </nav>
+
+    <main class="page-main">
+      <div class="container stack">
+        <section class="card page-header">
+          <h1 class="page-title">Good Evening, Sreeraj</h1>
+          <p class="muted">Find developers and build projects together.</p>
+          <form class="search-bar mt-1" action="#" role="search">
+            <span class="search-icon" aria-hidden="true">&#128269;</span>
+            <input class="search-input" type="search" placeholder="Search skills, people, projects" aria-label="Search dashboard" />
+          </form>
+        </section>
+
+        <section>
+          <h2 class="section-title">Recommended Peers</h2>
+          <div class="grid-3">
+            <article class="card peer-card">
+              <div class="avatar">RV</div>
+              <div class="peer-meta">
+                <h3>Rahul Verma</h3>
+                <p class="muted">Backend Developer</p>
+                <div class="skill-tags">
+                  <span class="skill-tag">Python</span>
+                  <span class="skill-tag">Django</span>
+                  <span class="skill-tag">PostgreSQL</span>
+                </div>
+              </div>
+              <a class="btn btn-primary mt-1" href="profile.html">View Profile</a>
+            </article>
+            <article class="card peer-card">
+              <div class="avatar">NP</div>
+              <div class="peer-meta">
+                <h3>Neha Patel</h3>
+                <p class="muted">Data Scientist</p>
+                <div class="skill-tags">
+                  <span class="skill-tag">Python</span>
+                  <span class="skill-tag">ML</span>
+                  <span class="skill-tag">Pandas</span>
+                </div>
+              </div>
+              <a class="btn btn-primary mt-1" href="profile.html">View Profile</a>
+            </article>
+            <article class="card peer-card">
+              <div class="avatar">AM</div>
+              <div class="peer-meta">
+                <h3>Arjun Menon</h3>
+                <p class="muted">Frontend Developer</p>
+                <div class="skill-tags">
+                  <span class="skill-tag">HTML</span>
+                  <span class="skill-tag">CSS</span>
+                  <span class="skill-tag">JS</span>
+                </div>
+              </div>
+              <a class="btn btn-primary mt-1" href="profile.html">View Profile</a>
+            </article>
+          </div>
+        </section>
+
+        <section>
+          <h2 class="section-title">Trending Skills</h2>
+          <div class="skill-tags">
+            <span class="skill-tag">Python</span>
+            <span class="skill-tag">React</span>
+            <span class="skill-tag">Machine Learning</span>
+            <span class="skill-tag">UI/UX</span>
+            <span class="skill-tag">Django</span>
+          </div>
+        </section>
+
+        <section>
+          <h2 class="section-title">Recent Projects</h2>
+          <div class="grid-2">
+            <article class="card project-card">
+              <div class="project-head">
+                <h3>SPEN Programming Language</h3>
+                <span class="badge badge-warning">2 Open Roles</span>
+              </div>
+              <p class="muted">Experimental interpreter designed for teaching compiler and runtime concepts.</p>
+              <p class="project-meta">Team Members: Sreeraj, Rahul, Neha</p>
+              <p class="project-meta">Open Roles: Frontend Developer, Documentation Writer</p>
+              <a class="btn btn-primary mt-08" href="project.html">Join Project</a>
+            </article>
+            <article class="card project-card">
+              <div class="project-head">
+                <h3>Campus Event Tracker</h3>
+                <span class="badge badge-success">1 Open Role</span>
+              </div>
+              <p class="muted">A shared student dashboard for clubs to publish campus events in one place.</p>
+              <p class="project-meta">Team Members: Arjun, Vani, Karthik</p>
+              <p class="project-meta">Open Roles: Backend Engineer</p>
+              <a class="btn btn-primary mt-08" href="project.html">Join Project</a>
+            </article>
+          </div>
+        </section>
+      </div>
+    </main>
+
+    <footer class="footer">
+      <div class="container footer-inner">
+        <p class="muted">PeerStack <span data-year></span></p>
+        <div class="footer-links">
+          <a href="#">About</a>
+          <a href="#">Contact</a>
+          <a href="#">GitHub</a>
+        </div>
+      </div>
+    </footer>
+
+    <script src="js/main.js"></script>
+  </body>
+</html>
